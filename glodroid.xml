@@ -4,6 +4,7 @@
   <remote  name="github"   fetch="https://github.com/" />
   <remote  name="gitlab"   fetch="https://gitlab.freedesktop.org/" />
   <remote  name="glodroid" fetch="https://github.com/glodroid/" />
+  <remote  name="kombuta" fetch="https://github.com/kombuta/" />
 
   <extend-project name="platform/external/arm-trusted-firmware" revision="de9d0d7c7ffc592e34f9c8c38c1971556d4d4de8" />
   <extend-project name="platform/external/libdrm" revision="d3505e46291b7ce7b5eb56544e7dfc0ec5de5540"/>
@@ -11,7 +12,7 @@
   <remove-project name="platform/external/u-boot" />
   <remove-project name="platform/external/drm_hwcomposer" />
 
-  <project path="device/glodroid"        remote="glodroid" name="glodroid_device.git"        revision="refs/tags/v0.5.1" />
+  <project path="device/glodroid"        remote="kombuta" name="glodroid_device.git"        revision="ril-gps" />
   <project path="prebuilts/applications" remote="glodroid" name="glodroid_external_apks.git" revision="refs/tags/apps-v2" />
 
   <project path="external/iio-sensors-hal" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/iio-sensors-hal-v1" clone-depth="1" />
@@ -19,7 +20,7 @@
   <project path="external/drm_hwcomposer"  remote="glodroid" name="glodroid_forks.git" revision="refs/tags/drm_hwcomposer-v1" clone-depth="1" />
   <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/mesa3d-v5" clone-depth="1" />
   <project path="external/u-boot"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/uboot-v4" clone-depth="1" />
-  <project path="kernel/glodroid-sunxi"    remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-sunxi-v2" clone-depth="1" />
+  <project path="kernel/glodroid-sunxi"    remote="kombuta" name="glodroid_forks.git" revision="ril" clone-depth="1" />
   <project path="kernel/glodroid-broadcom" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-broadcom-v2" clone-depth="1" />
   <project path="external/tinyhal"         remote="glodroid" name="glodroid_forks.git" revision="refs/tags/tinyhal-v1" clone-depth="1" />
 
